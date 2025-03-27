@@ -45,7 +45,7 @@ class CommandService {
     }
 
         suspend fun dealWith60SWorld(content: String): MessageChain {
-        val url = "https://api.andeer.top/API/60s.php"
+        val url = "https://api.52vmy.cn/api/wl/60s"
         var toExternalResource = HttpUtils.downloadBytes(url)?.toExternalResource()
         var uploadImage = first.uploadImage(toExternalResource!!)
         if (toExternalResource == null){
